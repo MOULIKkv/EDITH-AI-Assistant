@@ -38,7 +38,7 @@ class ModernApp(App):
         self.tts_engine = pyttsx3.init()
         try:
             # Your API Key Here
-            os.environ['GOOGLE_API_KEY'] = "AIzaSyBr8pXAbrAcGhThnE1TmOSz5D6Amq6S0G8"
+            os.environ['GOOGLE_API_KEY'] = "copy your key"
             genai.configure(api_key=os.environ['GOOGLE_API_KEY'])
             safety_settings = [{"category": c, "threshold": "BLOCK_NONE"} for c in
                                ["HARM_CATEGORY_HARASSMENT", "HARM_CATEGORY_HATE_SPEECH",
